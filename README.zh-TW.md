@@ -2,7 +2,7 @@
 
 # Hyread Cloner
 
-<img src="https://img.shields.io/badge/Version-v1.0-green">
+<img src="https://img.shields.io/badge/Version-v1.1.0-green">
 
 一個 Tampermonkey 使用者腳本，自動翻頁並將 HyRead 電子書頁面匯出成單一 PDF 檔案。
 
@@ -62,7 +62,7 @@ let flip_page_wait_ms = 1000;
 
 - 使用 [jsPDF](https://github.com/parallax/jsPDF)（從 CDN 載入）產生 PDF。
 - 小於 400×400px 的圖片會自動跳過。
-- `@match *://*hyread*/*` 會匹配所有網域中包含「hyread」的網站。你可以縮小範圍（如 `*://service.ebook.hyread.com.tw/*`）或擴大（`*://*/*`）。
+- `@match *://service.ebook.hyread.com.tw/ebookservice/epubreader/*` 會匹配所有閱讀的網頁。你可以依照需要擴大範圍（`*://*/*`），例如頂層控制台不顯示的時候。
 
 ---
 

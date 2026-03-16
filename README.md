@@ -2,7 +2,7 @@
 
 # Hyread Cloner
 
-<img src="https://img.shields.io/badge/Version-v1.0-green">
+<img src="https://img.shields.io/badge/Version-v1.1.0-green">
 
 A Tampermonkey userscript that auto-flips and exports HyRead ebook pages to a single PDF file.
 
@@ -62,7 +62,7 @@ Change `1000` (1 second) to whatever you want. For example:
 
 - Uses [jsPDF](https://github.com/parallax/jsPDF) (loaded from CDN) for PDF generation.
 - Images smaller than 400×400px are automatically skipped.
-- The `@match *://*hyread*/*` matches any domain containing "hyread". You can narrow it down (e.g. `*://service.ebook.hyread.com.tw/*`) or widen it (`*://*/*`) as needed.
+- The `@match *://service.ebook.hyread.com.tw/ebookservice/epubreader/*` matches any reading page. You can widen it (`*://*/*`) if needed (eg. Top control panel not showing).
 
 ---
 
